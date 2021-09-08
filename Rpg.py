@@ -4,7 +4,7 @@ import random
 alignment = ["Law", "Neutral", "Chaos"]
 
 # A list of classes that the user can choose from
-Class = ["warrior", "knight", "mage", "thief", "cleric", "pyromancer"]
+classes = ["warrior", "knight", "mage", "thief", "cleric", "pyromancer"]
 
 # Weapon selection
 weapons = ["sword", "spear", "spell staff", "knives", "wand", "mace"]
@@ -23,7 +23,7 @@ enemy_actions = ["attack", "spell", "defend"]
 def rpg_char():
     # Defining the alignment and Class variable globally
     global alignment
-    global Class
+    global classes
     
     # The alignment choices will be completely random
     align_choice = random.choice(alignment)
@@ -53,7 +53,7 @@ def rpg_char():
 
             # User needs to pick a class from the selection
             class_choice = input("\nPick a class for you character: Warrior, Knight, Mage, Thief, Cleric, Pyromancer: ")
-            for i in Class:
+            for i in classes:
                 if class_choice == i:
                     print(f"{class_choice} is your decision, are you happy with the character you created?: (y/n)")
 
@@ -75,7 +75,7 @@ def rpg_char():
 
             # User is expected to choose a class for their character
             class_choice = input("\nPick a class for you character: Warrior, Knight, Mage, Thief, Cleric, Pyromancer: ")
-            for i in Class:
+            for i in classes:
                 if class_choice == i:
                     print(f"{class_choice} is your decision, are you happy with the character you created?: (y/n)")
 
@@ -97,7 +97,7 @@ def rpg_char():
 
             # User is expected to choose a class for their character
             class_choice = input("\nPick a class for you character: Warrior, Knight, Mage, Thief, Cleric, Pyromancer: ")
-            for i in Class:
+            for i in classes:
                 if class_choice == i:
                     print(f"{class_choice} is your decision, are you happy with the character you created?: (y/n)")
 
