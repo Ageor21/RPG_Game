@@ -61,7 +61,7 @@ def rpg_char():
                     while input() == "y":
                         print(f"\nLet your journey begin, young {class_choice} of {align_choice}: press Enter ")
                     else:
-                        return rpg_char()
+                        pass
 
         # If the user is of Neutral alignment, the program will give a brief summary of the chose
         if align_choice == "Neutral":
@@ -83,7 +83,7 @@ def rpg_char():
                     while input() == "y":
                         print(f"\nLet your journey begin, young {class_choice} of {align_choice}: press Enter ")
                     else:
-                        return rpg_char()
+                        pass
 
         # If the user is of Chaos alignment, the program will give a brief summary of the chose
         if align_choice == "Chaos":
@@ -105,7 +105,7 @@ def rpg_char():
                     while input() == "y":
                         print(f"\nLet your journey begin, young {class_choice} of {align_choice}: Press Enter ")
                     else:
-                        return rpg_char()
+                        pass
 
     # For any exceptions that may occur
     except ValueError:
