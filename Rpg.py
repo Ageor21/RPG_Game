@@ -21,7 +21,7 @@ enemy_actions = ["attack", "spell", "defend"]
 
 
 def rpg_char():
-    # Defining the alignment and Class variable globally
+    # Defining the alignment and classes variable globally
     global alignment
     global classes
     
