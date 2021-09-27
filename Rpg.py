@@ -21,7 +21,7 @@ enemy_actions = ["attack", "spell", "defend"]
 
 
 def rpg_char():
-    # Defining the alignment and classes variable globally
+    # Defining the alignment and Class variable globally
     global alignment
     global classes
     
@@ -52,9 +52,10 @@ def rpg_char():
             print(stats)
 
             # User needs to pick a class from the selection
-            class_choice = input("\nPick a class for you character: Warrior, Knight, Mage, Thief, Cleric, Pyromancer: ")
+            class_choice = str(input("\nPick a class for you character:"
+                                 " Warrior, Knight, Mage, Thief, Cleric, Pyromancer: "))
             for i in classes:
-                if class_choice == i:
+                if class_choice in i:
                     print(f"{class_choice} is your decision, are you happy with the character you created?: (y/n)")
 
                     # if the user is satisfied with their decision they can either proceed or stop
@@ -74,9 +75,10 @@ def rpg_char():
             print(stats)
 
             # User is expected to choose a class for their character
-            class_choice = input("\nPick a class for you character: Warrior, Knight, Mage, Thief, Cleric, Pyromancer: ")
+            class_choice = str(input("\nPick a class for you character: "
+                                     "Warrior, Knight, Mage, Thief, Cleric, Pyromancer: "))
             for i in classes:
-                if class_choice == i:
+                if class_choice in i:
                     print(f"{class_choice} is your decision, are you happy with the character you created?: (y/n)")
 
                     # if the user is satisfied with their decision they can either proceed or stop
@@ -96,9 +98,10 @@ def rpg_char():
             print(stats)
 
             # User is expected to choose a class for their character
-            class_choice = input("\nPick a class for you character: Warrior, Knight, Mage, Thief, Cleric, Pyromancer: ")
+            class_choice = str(input("\nPick a class for you character: "
+                                     "Warrior, Knight, Mage, Thief, Cleric, Pyromancer: "))
             for i in classes:
-                if class_choice == i:
+                if class_choice in i:
                     print(f"{class_choice} is your decision, are you happy with the character you created?: (y/n)")
 
                     # if the user is satisfied with their decision they can either proceed or stop
@@ -124,7 +127,7 @@ rpg_char()
 def char_weapon():
     # Defining the weapons variable globally and asking the user to choose a weapon
     global weapons
-    weapon_choice = input("What weapon will you choose:\n " + str(weapons))
+    weapon_choice = input("What weapon will you choose:\n" + ", ".join(weapons))
 
     # It will iterate through the weapons list and if true the user will obtain that weapon
     for k in weapons:
