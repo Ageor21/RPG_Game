@@ -103,12 +103,11 @@ def rpg_char():
                 rpg_char()
 
     # For any exceptions that may occur
-    except ValueError:
-        print("Oops, not a letter. try again ")
+    except ValueError as e:
+        print("Oops, not a letter. try again: " + str(e))
         rpg_char()
     except Exception as e:
-        print(e)
-        print("That method was wrong, please try again")
+        print("That method was wrong, please try again: " + str(e))
         rpg_char()
 
 
